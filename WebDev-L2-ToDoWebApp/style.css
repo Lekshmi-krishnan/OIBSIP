@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+h1, h2, h3, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.todo-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 35px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.app-header h1 {
+    font-size: 28px;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.app-header p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.input-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.input-form input[type="text"] {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+}
+
+.input-form input[type="text"]:focus {
+    border-color: #0284c7;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-add {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+.btn-add:hover {
+    background-color: #0369a1;
+}
+
+.error-message {
+    display: none;
+    color: #dc2626;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.tasks-section {
+    margin-top: 30px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    color: #1e293b;
+}
+
+.badge {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.badge-pending {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.badge-completed {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.empty-state {
+    font-size: 14px;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e1;
+}
+
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    transition: transform 0.15s ease;
+}
+
+.task-item:hover {
+    border-color: #cbd5e1;
+}
+
+.task-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    accent-color: #0284c7;
+    cursor: pointer;
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.task-text {
+    font-size: 15px;
+    color: #0f172a;
+    word-break: break-word;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.timestamps {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 2px solid #0284c7;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.task-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-icon {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.btn-edit {
+    background-color: #f1f5f9;
+    color: #334155;
+}
+
+.btn-edit:hover {
+    background-color: #e2e8f0;
+}
+
+.btn-save {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+.btn-save:hover {
+    background-color: #15803d;
+}
+
+.btn-delete {
+    background-color: #fef2f2;
+    color: #dc2626;
+}
+
+.btn-delete:hover {
+    background-color: #fee2e2;
+}
+
+@media (max-width: 500px) {
+    .todo-card {
+        padding: 22px 16px;
+    }
+
+    .input-form {
+        flex-direction: column;
+    }
+
+    .btn-add {
+        width: 100%;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-actions {
+        justify-content: flex-end;
+        margin-top: 8px;
+    }
+}
