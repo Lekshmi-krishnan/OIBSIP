@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calculator-card {
+    background-color: #0f172a;
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.25);
+}
+
+.display-container {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 20px 16px;
+    margin-bottom: 22px;
+    text-align: right;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-all;
+    word-wrap: break-word;
+    border: 1px solid #334155;
+}
+
+.previous-display {
+    color: #94a3b8;
+    font-size: 16px;
+    min-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.current-display {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    height: 60px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    user-select: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-number {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+.btn-number:hover {
+    background-color: #475569;
+}
+
+.btn-operator {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+.btn-operator:hover {
+    background-color: #0369a1;
+}
+
+.btn-action {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+.btn-action:hover {
+    background-color: #cbd5e1;
+}
+
+.btn-equals {
+    background-color: #f59e0b;
+    color: #ffffff;
+    grid-row: span 2;
+    height: 100%;
+}
+
+.btn-equals:hover {
+    background-color: #d97706;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+    .calculator-card {
+        padding: 18px;
+    }
+
+    .btn {
+        height: 52px;
+        font-size: 18px;
+    }
+
+    .current-display {
+        font-size: 26px;
+    }
+}
