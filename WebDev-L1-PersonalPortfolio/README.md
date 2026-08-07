@@ -28,4 +28,4 @@
 - `index.html` - HTML structure and portfolio sections
 - `style.css` - Custom CSS styling and responsive layout
 - `Screenshot-index.png` - Page preview screenshot
-- `assets/` - Image directory containing profile photo (`profile.jpg`)
+- `assets/` - Image directory containing profile photo (`profile.png`)

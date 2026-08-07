@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="converter-card">
+        <header class="converter-header">
+            <h1>Temperature Converter</h1>
+            <p>Convert temperatures accurately between Celsius, Fahrenheit, and Kelvin.</p>
+        </header>
+
+        <form id="calc-form" onsubmit="return false;">
+            <div class="input-group">
+                <label for="temp-input">Degrees / Value</label>
+                <input type="text" id="temp-input" placeholder="e.g. 25" autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <label>Select Input Unit</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="input-unit" value="celsius" checked>
+                        <span>Celsius (°C)</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="input-unit" value="fahrenheit">
+                        <span>Fahrenheit (°F)</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="input-unit" value="kelvin">
+                        <span>Kelvin (K)</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" id="convert-btn" class="convert-btn">Convert Temperature</button>
+        </form>
+
+        <div id="error-box" class="error-box"></div>
+
+        <section class="results-section">
+            <h2>Converted Output</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <span class="unit-label">Celsius</span>
+                    <span class="result-value" id="celsius-val">-- °C</span>
+                </div>
+                <div class="result-card">
+                    <span class="unit-label">Fahrenheit</span>
+                    <span class="result-value" id="fahrenheit-val">-- °F</span>
+                </div>
+                <div class="result-card">
+                    <span class="unit-label">Kelvin</span>
+                    <span class="result-value" id="kelvin-val">-- K</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
