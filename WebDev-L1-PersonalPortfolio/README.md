@@ -26,6 +26,7 @@
 
 ## File Structure
 - `index.html` - HTML structure and portfolio sections
-- `style.css` - Custom CSS styling and responsive layout
+- `style.css` - Custom styling and layout
 - `Screenshot-index.png` - Page preview screenshot
-- `assets/` - Image directory containing profile photo (`profile.png`)
+- `demo-video.mov` - Project walkthrough demo video
+- `assets/` - Image directory containing profile photo (`profile.jpg`)

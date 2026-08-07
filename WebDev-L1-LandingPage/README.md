@@ -27,4 +27,5 @@
 - `index.html` - Page structure
 - `style.css` - Page styling
 - `Screenshot-index.png` - Page preview screenshot
+- `demo-video.mov` - Project walkthrough demo video
 - `assets/` - Image background

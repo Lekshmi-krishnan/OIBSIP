@@ -29,3 +29,4 @@
 - `style.css` - CSS Grid styling and theme
 - `script.js` - Calculation engine and event handling
 - `Screenshot-image.png` - Preview screenshot
+- `demo-video.mov` - Project walkthrough demo video

@@ -31,3 +31,4 @@
 - `style.css` - Custom styling and layout
 - `script.js` - Conversion logic and validation
 - `Screenshot-image.png` - Preview screenshot
+- `demo-video.mov` - Project walkthrough demo video

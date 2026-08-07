@@ -26,3 +26,4 @@
 - `index.html` - Page content and structure
 - `style.css` - Custom styling and layout
 - `Screenshot-image.png` - Preview screenshot
+- `demo-video.mov` - Project walkthrough demo video

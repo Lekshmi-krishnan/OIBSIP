@@ -29,3 +29,4 @@
 - `style.css` - Custom styling, view transitions, and layout
 - `script.js` - SHA-256 hashing, authentication logic, routing, and `localStorage` integration
 - `Screenshot-image.png` - Preview screenshot
+- `demo-video.mov` - Project walkthrough demo video

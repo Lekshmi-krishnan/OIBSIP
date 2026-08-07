@@ -30,3 +30,4 @@
 - `style.css` - Custom styling, badges, and layout
 - `script.js` - Task state management, DOM rendering, and `localStorage` integration
 - `Screenshot-image.png` - Preview screenshot
+- `demo-video.mov` - Project walkthrough demo video
