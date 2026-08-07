@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="auth-card">
+        <section id="login-view" class="view view-active">
+            <header class="auth-header">
+                <h1>Welcome Back</h1>
+                <p>Sign in to access your account</p>
+            </header>
+
+            <form id="login-form" autocomplete="off" onsubmit="return false;">
+                <div class="input-group">
+                    <label for="login-identifier">Username or Email</label>
+                    <input type="text" id="login-identifier" placeholder="Enter username or email">
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter password">
+                </div>
+
+                <div id="login-error" class="alert alert-error"></div>
+
+                <button type="submit" id="login-btn" class="btn btn-primary">Login</button>
+            </form>
+
+            <footer class="auth-footer">
+                <p>Don't have an account? <a href="#" id="goto-register">Register here</a></p>
+            </footer>
+        </section>
+
+        <section id="register-view" class="view view-hidden">
+            <header class="auth-header">
+                <h1>Create Account</h1>
+                <p>Register a new account to get started</p>
+            </header>
+
+            <form id="register-form" autocomplete="off" onsubmit="return false;">
+                <div class="input-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" placeholder="Choose a username">
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" placeholder="Enter email address">
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="Min 8 chars with at least 1 number">
+                </div>
+
+                <div id="reg-error" class="alert alert-error"></div>
+                <div id="reg-success" class="alert alert-success"></div>
+
+                <button type="submit" id="register-btn" class="btn btn-primary">Register</button>
+            </form>
+
+            <footer class="auth-footer">
+                <p>Already have an account? <a href="#" id="goto-login">Login here</a></p>
+            </footer>
+        </section>
+
+        <section id="dashboard-view" class="view view-hidden">
+            <header class="auth-header">
+                <span class="badge badge-secure">Protected Dashboard</span>
+                <h1>Welcome, <span id="dash-username">User</span>!</h1>
+                <p>You have successfully logged into the protected area.</p>
+            </header>
+
+            <div class="user-info-card">
+                <div class="info-row">
+                    <span class="info-label">Username</span>
+                    <span id="info-username" class="info-value">--</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Email Address</span>
+                    <span id="info-email" class="info-value">--</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Session Status</span>
+                    <span class="info-value text-green">Active (Logged In)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Login Time</span>
+                    <span id="info-time" class="info-value">--</span>
+                </div>
+            </div>
+
+            <button type="button" id="logout-btn" class="btn btn-danger">Logout</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
